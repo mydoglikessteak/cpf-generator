@@ -16,7 +16,10 @@ primeiro,segundo,terceiro,quarto,quinta,sexto,setimo,oitavo,nono,decimo, = numer
 cpf = random.choices(numeros,k=11)
 print(f'cpf novo e {cpf}')
 
-
+def calculodigito(int):
+    for int in cpf:
+        print(f'os int sao {int}')
+        
 
 
 if nome_cpf =="Clara":
@@ -27,5 +30,6 @@ elif nome_cpf=="Vinicius":
         
 else:
     print(f'o cpf de {nome_cpf} e {cpf[0]}{cpf[1]}{cpf[2]}.{cpf[3]}{cpf[4]}{cpf[5]}.{cpf[6]}{cpf[7]}{cpf[8]}-{cpf[9]}{cpf[10]}')
+    calculodigito(cpf[9])
 
     
